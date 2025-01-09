@@ -11,36 +11,67 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <style>
-        .div {
-            padding-top: 15rem;
-            margin-left: 20rem;
+        body {
+            height: 100vh;
         }
     </style>
 
 </head>
 
 <body id="body">
-    <div class="div">
-        <div class="d-flex justify-content-around w-50">
-            <div class="col-3 mx-3"><button onclick="red()" class="btn btn-danger w-100">RED</button></div>
-            <div class="col-3 mx-3"><button onclick="yellow()" class="btn btn-warning w-100">YELLOW</button></div>
-            <div class="col-3 mx-3"><button onclick="blue()" class="btn btn-primary w-100">BLUE</button></div>
-            <div class="col-3 mx-3"><button onclick="green()" class="btn btn-success w-100">GREEN</button></div>
+    <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="ps-2">
+            <div class="row mb-4">
+               <div class="col-4"></div>
+               <div class="col-4 w-100">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <button onclick="red()" class="btn btn-danger mb-4 w-100">RED</button>
+                        <button onclick="purple()" class="btn text-light w-100" style="background-color: rgb(132, 28, 231);">PURPLE</button>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <button onclick="yellow()" class="btn btn-warning mb-4 w-100">YELLOW</button>
+                        <button onclick="grey()" class="btn text-light w-100" style="background-color: rgb(103, 101, 101);">GREY</button>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <button onclick="blue()" class="btn btn-primary mb-4 w-100">BLUE</button>
+                        <button onclick="pink()" class="btn w-100" style="background-color: rgb(245, 66, 156);">PINK</button>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <button onclick="green()" class="btn btn-success mb-4 w-100">GREEN</button>
+                        <button onclick="orange()" class="btn w-100" style="background-color: rgb(255, 136, 0);">ORANGE</button>
+                    </div>
+                </div>
+               </div>
+               <div class="col-4"></div>
+            </div>
         </div>
     </div>
 </body>
 <script>
-    function red(){
-        body.style.background="red"
+    function red() {
+        body.style.background = "red"
     }
-    function yellow(){
-        body.style.background="yellow"
+    function yellow() {
+        body.style.background = "yellow"
     }
-    function blue(){
-        body.style.background="blue"
+    function blue() {
+        body.style.background = "blue"
     }
-    function green(){
-        body.style.background="green"
+    function green() {
+        body.style.background = "green"
+    }
+    function purple() {
+        body.style.background = "purple"
+    }
+    function grey() {
+        body.style.background = "grey"
+    }
+    function pink() {
+        body.style.background = "pink"
+    }
+    function orange() {
+        body.style.background = "orange"
     }
 </script>
 
